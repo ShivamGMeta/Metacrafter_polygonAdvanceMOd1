@@ -16,7 +16,7 @@ async function main() {
 
   
   const NFT = await ethers.getContractFactory("BirdOfParadise");
-  const ethNFTAddress = await NFT.attach("0x9093F40AeDc4094A0131866583f8B4b778F32271"); // ye change hoga as per contract address
+  const ethNFTAddress = await NFT.attach("0x9B8C3ba3DeB90971c72C181b405d1115e237845A"); // ye change hoga as per contract address
 
   
   const fxRootAddress = "0x9E688939Cb5d484e401933D850207D6750852053";

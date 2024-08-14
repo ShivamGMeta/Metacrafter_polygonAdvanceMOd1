@@ -41,10 +41,17 @@ npx hardhat run scripts/batchMint.js --network sepolia
 ### Approve and Deposite all the minted NFT's  from SEPOLIA to AMOY
 6.
 ```shell
-npx hardhat run scripts/approveDeposit.js --network goerli
+npx hardhat run scripts/approvedDeposit.js --network goerli
 ```
+
 Running this will first approve the transfer to FxPortal bridge and then will transfer to Polygon AMOY 
 Finaly all the NFT's will be transfered from Ethereum to Polygon Network usiing fxPortal Bridge.
+
+##### After 20-30 min run this command to check the amoy balance 
+7. Display Amoy chain balance
+```shell
+npx hardhat run scripts/balanceamoy.js --network amoy
+```
 
 And Balance in Sepolia will become 0 and in Polygon Amoy 5 NFT's
 ![image](https://github.com/user-attachments/assets/8f7eff85-6ab1-4c6c-969b-ffa059fea473)
